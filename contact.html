@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .heading-container {
+            position: relative;
+            margin-bottom: 4rem;
+        }
+        
+        .heading-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            font-size: 5rem;
+            opacity: 0.1;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+            z-index: -1;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #cccccc;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .contact-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .icon-container {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .icon-container i {
+            font-size: 1.5rem;
+            color: #FFC107;
+        }
+        
+        .contact-title {
+            font-size: 1rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            color: #cccccc;
+        }
+        
+        .cta-section {
+            margin-bottom: 4rem;
+        }
+        
+        .cta-text {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            background-color: #FFC107;
+            color: #121212;
+            font-weight: bold;
+            padding: 0.75rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background-color: #FFD54F;
+            transform: translateY(-3px);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #1e1e1e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: #FFC107;
+        }
+        
+        .social-link i {
+            color: #cccccc;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover i {
+            color: #121212;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading-container">
+            <div class="heading-background">Contact</div>
+            <h1>Contact Me</h1>
+            <p class="subtitle">Below are the details to reach out to me!</p>
+        </div>
+        
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3 class="contact-title">ADDRESS</h3>
+                <p class="contact-info">Nagpur, Maharashtra,<br>India</p>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3 class="contact-title">CONTACT NUMBER</h3>
+                <p class="contact-info">+6263760193</p>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fas fa-paper-plane"></i>
+                </div>
+                <h3 class="contact-title">EMAIL ADDRESS</h3>
+                <p class="contact-info">aadipatle6@gmail.com</p>
+            </div>
+            
+            <div class="contact-item">
+                <div class="icon-container">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <h3 class="contact-title">DOWNLOAD RESUME</h3>
+                <p class="contact-info">resumelink</p>
+            </div>
+        </div>
+        
+        <div class="cta-section">
+            <h2 class="cta-text">Have a Question?</h2>
+            <a href="#" class="cta-button">Click Here</a>
+        </div>
+        
+        <div class="social-links">
+            <p style="margin-right: 10px; display: flex; align-items: center;">Find me on</p>
+            <a href="#" class="social-link">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

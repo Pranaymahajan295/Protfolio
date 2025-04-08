@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Education</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #fff;
+    }
+
+    .education-section {
+      max-width: 1100px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .education-title {
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .underline {
+      height: 2px;
+      background: linear-gradient(to right, #ffc107 30%, transparent 70%);
+      margin: 0 auto 40px;
+      width: 90%;
+    }
+
+    .edu-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .edu-card {
+      background-color: #1c1c1c;
+      padding: 25px 30px;
+      border-radius: 12px;
+      width: 400px;
+      text-align: left;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .edu-year {
+      font-size: 20px;
+      font-weight: 700;
+      color: #ffc107;
+      margin-bottom: 5px;
+    }
+
+    .edu-degree {
+      font-size: 22px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .edu-board {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+
+    .edu-grade {
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    .download-cv {
+      margin-top: 50px;
+    }
+
+    .download-cv button {
+      background-color: #ffc107;
+      color: #000;
+      border: none;
+      padding: 15px 35px;
+      font-size: 14px;
+      border-radius: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .download-cv button:hover {
+      background-color: #ffca28;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 900px) {
+      .edu-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="education-section">
+    <h2 class="education-title">Education</h2>
+    <div class="underline"></div>
+
+    <div class="edu-cards">
+      <div class="edu-card">
+        <div class="edu-year">2020–2023/24</div>
+        <div class="edu-degree">Bachelor of Commerce in Computer Application (BCCA)</div>
+        <div class="edu-board">RTMNU</div>
+        <div class="edu-grade">GPA: 7.32</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-year">2019</div>
+        <div class="edu-degree">Higher Secondary School</div>
+        <div class="edu-board">MP Board</div>
+        <div class="edu-grade">Grade: First class distinction.</div>
+      </div>
+    </div>
+
+    <div class="download-cv">
+      <button>DOWNLOAD CV</button>
+    </div>
+  </section>
+
+</body>
+</html>
